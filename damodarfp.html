@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Waste Exchange Banner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: whitesmoke;
+      color: #000000;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 100vh;
+      padding: 0 5vw;
+      box-sizing: border-box;
+    }
+    .left-section {
+      max-width: 40vw;
+    }
+    .brand {
+      font-size: 1.3rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      margin-bottom: 2rem;
+      color: black;
+    }
+    .main-title {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      color: black;
+    }
+    .subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 2.5rem;
+      color: black;
+    }
+    .learn-btn {
+      background: #111;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      padding: 1rem 2.5rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.1s;
+    }
+    .learn-btn:hover {
+      background: #222;
+    }
+    .right-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50vw;
+    }
+    /* Illustration Styling */
+    .illustration {
+      position: relative;
+      width: 420px;
+      height: 340px;
+      background: none;
+    }
+    .lightbulb {
+      position: absolute;
+      top: 10px;
+      left: 220px;
+      width: 70px;
+      height: 90px;
+      z-index: 2;
+    }
+    /* Responsive */
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2vw;
+      }
+      .right-section {
+        width: 100%;
+        margin-top: 3rem;
+        justify-content: flex-start;
+      }
+      .left-section {
+        max-width: 100%;
+      }
+      .illustration {
+        width: 300px;
+        height: 240px;
+      }
+      .lightbulb {
+        left: 140px;
+        width: 50px;
+        height: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-section">
+      <div class="brand">Waste Exchange</div>
+      <div class="main-title">Earn while exchanging Waste</div>
+      <div class="subtitle">Partner with Innovators</div>
+      <button class="learn-btn" onclick="learnMore()">LEARN MORE</button>
+    </div>
+    <div class="right-section">
+        <video width="640" height="360" controls>
+        <source src="Waste.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+    </div>
+  </div>
+  <script>
+    function learnMore() {
+      alert('Thank you for your interest! More information coming soon.');
+    }
+    scr = "javas.js"
+  </script>
+
+</body>
+</html>
